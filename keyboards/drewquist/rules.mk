@@ -38,11 +38,7 @@ F_USB = $(F_CPU)
 #     This definition is optional, and if your keyboard supports multiple bootloaders of
 #     different sizes, comment this out, and the correct address will be loaded
 #     automatically (+60). See bootloader.mk for all options.
-ifeq ($(strip $(KEYBOARD)), nyquist/rev3)
-    BOOTLOADER = dfu
-else
-    BOOTLOADER = caterina
-endif
+BOOTLOADER = caterina
 
 # Interrupt driven control endpoint task(+60)
 OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
@@ -68,4 +64,4 @@ SLEEP_LED_ENABLE = no    # Breathing sleep LED during USB suspend
 
 SPLIT_KEYBOARD = yes
 LAYOUTS = ortho_5x12
-DEFAULT_FOLDER = nyquist/rev2
+DEFAULT_FOLDER = drewquist/rev1
