@@ -1,5 +1,3 @@
-#pragma once
-
 #include "nyquist.h"
 
 //void promicro_bootloader_jmp(bool program);
@@ -15,7 +13,7 @@
 #endif
 
 //void promicro_bootloader_jmp(bool program);
-
+#define FLIP_HALF
 #ifndef FLIP_HALF
 // Standard Keymap
 // (TRRS jack on the left half is to the right, TRRS jack on the right half is to the left)
